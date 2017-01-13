@@ -195,3 +195,31 @@ figure {
 .about > p {
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .site-nav-item {
+    float: none;
+    width: 100%;
+    height: 20%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .site-nav {
+    bottom: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 10%
+  }
+  .site-nav-item-label {
+    margin-top: .7em;
+  }
+  main {
+    position: relative;
+    left: 10%;
+  }
+
+.movie-overview {
+  display: block;
+}
+}
