@@ -249,3 +249,12 @@ figure {
     padding: 0.5rem;
   }
 }
+
+@media (min-width: 992px) {
+  .movie-poster {
+    display: block;
+  }
+  main>article>.movie-poster {
+    display: none;
+  }
+}
