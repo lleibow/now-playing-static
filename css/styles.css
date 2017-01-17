@@ -206,6 +206,14 @@ figure {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+
+  .site-logo {
+    position: absolute;
+    left: 0;
+    width: 2em;
+    margin-left: 0.5rem;
+  }
+
   .site-nav {
     bottom: 0;
     left: 0;
@@ -242,19 +250,33 @@ figure {
   body {
   padding: 0;
   }
-  .site-logo {
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 0.5rem;
-  }
+
 }
 
 @media (min-width: 992px) {
+
+  .movie-backdrop, .movie-overview {
+    display: none;
+  }
+
   .movie-poster {
     display: block;
   }
-  main>article>.movie-poster {
+
+  .movie {
+    float: left;
+    width: 30%;
+  }
+
+  .movie:first-child .movie-poster {
     display: none;
   }
-}
+
+  .movie:first-child .movie-backdrop, .movie:first-child .movie-overview {
+    display: block;
+  }
+
+  .movie:first-child {
+    float: none;
+    width: 100%;
+  }
